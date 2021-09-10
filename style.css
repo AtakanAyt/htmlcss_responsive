@@ -17,62 +17,65 @@ p {
 
 /* ------------------------ Classes---------------- */
 .ax-logo {
-  margin: 10px;
+  margin: 10px 10px 0 0;
 }
-
+.navigation-bar {
+  position: absolute;
+  bottom: 0;
+}
 
 .contact-links {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
- 
- .contact-links a {
-    color: black;
-    text-decoration: none;
-    margin-right: 40px;
+  text-align: center;
+  margin-top: 30px;
 }
-  
+
+.contact-links a {
+  color: black;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
 .contact-links a:hover {
-    color: #7bcc1c;
+  color: #7bcc1c;
 }
 
 .first-div {
-  background-color: #f6f6f6;
-}
-
-.first-header {
-  color: brown;
+  display: block;
+  position: relative;
+  background-color: cadetblue;
 }
 
 .laptop-img {
-  max-height: 450px;
-  max-width: 300px;
   position: absolute;
-  right: 100px;
-  top: 100px;
-  display: inline-block;
+  padding: 1.25rem 0;
+  max-height: 14rem;
+  max-width: 18rem;
+  height: 100%;
+  width: 100%;
+
+  right: 3%;
+
   content: url("https://images.squarespace-cdn.com/content/v1/5ece2ac40514bb77afb1018d/1616677595712-H20SABE6FNYMAI48M94Z/AXWIFI_slide+%282%29.png");
 }
 
 .second-div {
-  padding-bottom: 100px;
   background-image: url("https://images.squarespace-cdn.com/content/v1/5ece2ac40514bb77afb1018d/1616076016054-YL2FHNHN1IQ3XTS4ULDN/space_background_1500px.jpg?format=100w 100w,https://images.squarespace-cdn.com/content/v1/5ece2ac40514bb77afb1018d/1616076016054-YL2FHNHN1IQ3XTS4ULDN/space_background_1500px.jpg?format=300w");
-  height: max-content;
-  width: 100%;
+  height: auto;
+  width: auto;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
 }
 
-
-
-
+.second-div p {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 .table {
   width: auto;
   color: #7bcc1c;
-  cellspacing: 20px;
+  cellspacing: 1.25rem;
   border: 2px solid #444;
   display: inline-block;
 }
@@ -82,4 +85,65 @@ p {
   background-color: burlywood;
   border: 5px solid #444;
   background-color: #7bcc1c;
+}
+
+/*-------------------Navbar------------------------*/
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #7bcc1c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: rgb(64, 185, 145);
+}
+
+.logo-right {
+  margin-right: 4%;
+  float: right;
+}
+
+/* ------------------------------mobile--------------- */
+
+@media screen and (max-width: 600px) {
+  .first-div {
+    text-align: center;
+  }
+  .laptop-img {
+    display: none;
+  }
+  ul.topnav li {
+    float: center;
+  }
+  .navigation-bar {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    bottom: auto;
+  }
+
+  .logo-right {
+    display: block;
+    text-align: center;
+    margin: auto;
+    float: none;
+  }
+}
+
+ul.topnav li a {
+  padding: 0 10px 0 5px;
 }
