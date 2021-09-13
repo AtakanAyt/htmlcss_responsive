@@ -76,7 +76,7 @@ p {
   width: auto;
   color: #7bcc1c;
   cellspacing: 1.25rem;
-  border: 2px solid #444;
+
   display: inline-block;
 }
 
@@ -123,9 +123,10 @@ ul li a:hover {
   .first-div {
     text-align: center;
   }
-  .laptop-img {
-    display: none;
+  .second-div {
+    text-align: center;
   }
+
   ul.topnav li {
     float: center;
   }
@@ -146,4 +147,10 @@ ul li a:hover {
 
 ul.topnav li a {
   padding: 0 10px 0 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .laptop-img {
+    display: none;
+  }
 }
